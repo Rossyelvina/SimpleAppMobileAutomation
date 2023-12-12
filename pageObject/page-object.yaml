@@ -1,0 +1,18 @@
+#login
+header-simpleapp: '//android.widget.TextView[@text="Simple App"]'
+input-username : 'com.isl.simpleapp:id/username'
+input-password : 'com.isl.simpleapp:id/password'
+button-login: 'com.isl.simpleapp:id/login'
+login-failed-tst: '//android.widget.Toast[@text="Login failed"]'
+
+#Homepage
+header-calculator: '//android.widget.TextView[@text="Calculator"]'
+field-angka-1: 'com.isl.simpleapp:id/et_1'
+field-angka-2: 'com.isl.simpleapp:id/et_2'
+button-calculate: 'com.isl.simpleapp:id/acb_calculate'
+formula-option: 'com.isl.simpleapp:id/spinner_1'
+formula-add: '//android.widget.TextView[@resource-id="android:id/text1" and @text="+"]'
+formula-minus: '//android.widget.TextView[@resource-id="android:id/text1" and @text="-"]'
+formula-divide: '//android.widget.TextView[@resource-id="android:id/text1" and @text="-"]'
+formula-times: '//android.widget.TextView[@resource-id="android:id/text1" and @text="*"]'
+field-result: 'com.isl.simpleapp:id/tv_result'

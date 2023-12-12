@@ -10,17 +10,18 @@ ${platformName}                    Android
 ${platformVersion}                 12.0
 ${deviceName}                      device
 ${udid}                            emulator-5554
-${app}
+${app}                             ${EXECDIR}/APP/sample-apk (1).apk
+${automationName}                  UiAutomator2
 
 
 *** Keywords ***
-Open Application
-    Open Application               remote_url=${remote_url}
-    ...                            platformName=${platformName}
-    ...                            platformVersion=${platformVersion}
-    ...                            deviceName=${deviceName}
-    ...                            udid=${udid}
-    ...                            automationName=${UiAutomator2}
-
-Close Application
+Open Simple App Application
+    Open Application              remote_url=${remote_url}
+    ...                           platformName=${platformName}
+    ...                           platformVersion=${platformVersion}
+    ...                           deviceName=${deviceName}
+    ...                           udid=${udid}
+    ...                           app=${app}
+    ...                           automationName=${automationName}
+Close Simple App Application
     Close Application             

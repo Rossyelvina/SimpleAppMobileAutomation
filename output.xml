@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231212 11:18:34.014" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase-Mainmultiplication" source="C:\Users\yesdok\Desktop\BelajarKolaborasiGit\SimpleAppMobileAutomation\suites\testcase-mainmultiplication.robot">
+<test id="s1-t1" name="Valid login" line="11">
+<kw name="Open Simple App Application" library="base">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${remote_url}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>udid=${udid}</arg>
+<arg>app=${app}</arg>
+<arg>automationName=${automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231212 11:18:34.424" endtime="20231212 11:18:50.530"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:34.423" endtime="20231212 11:18:50.531"/>
+</kw>
+<kw name="Input Username" library="keywords-login">
+<arg>${username}</arg>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${input-username}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:18:51.089" level="INFO">criteria is com.isl.simpleapp:id/username</msg>
+<status status="PASS" starttime="20231212 11:18:50.533" endtime="20231212 11:18:51.090"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${input-username}</arg>
+<arg>${username}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231212 11:18:51.092" level="INFO">Typing text 'admin' into text field 'com.isl.simpleapp:id/username'</msg>
+<msg timestamp="20231212 11:18:51.880" level="INFO">criteria is com.isl.simpleapp:id/username</msg>
+<status status="PASS" starttime="20231212 11:18:51.090" endtime="20231212 11:18:51.880"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:50.533" endtime="20231212 11:18:51.880"/>
+</kw>
+<kw name="Input Password" library="keywords-login">
+<arg>${password}</arg>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${input-password}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:18:52.377" level="INFO">criteria is com.isl.simpleapp:id/password</msg>
+<status status="PASS" starttime="20231212 11:18:51.881" endtime="20231212 11:18:52.378"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${input-password}</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231212 11:18:52.382" level="INFO">Typing text 'admin' into text field 'com.isl.simpleapp:id/password'</msg>
+<msg timestamp="20231212 11:18:52.546" level="INFO">criteria is com.isl.simpleapp:id/password</msg>
+<status status="PASS" starttime="20231212 11:18:52.378" endtime="20231212 11:18:52.546"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:51.881" endtime="20231212 11:18:52.546"/>
+</kw>
+<kw name="Click Button Login" library="keywords-login">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${button-login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231212 11:18:52.553" level="INFO">Clicking element 'com.isl.simpleapp:id/login'.</msg>
+<msg timestamp="20231212 11:18:53.178" level="INFO">criteria is com.isl.simpleapp:id/login</msg>
+<status status="PASS" starttime="20231212 11:18:52.548" endtime="20231212 11:18:53.178"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:52.547" endtime="20231212 11:18:53.178"/>
+</kw>
+<kw name="Check Homepage" library="keywords-login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field-angka-1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:18:58.093" level="INFO">criteria is com.isl.simpleapp:id/et_1
+criteria is com.isl.simpleapp:id/et_1
+criteria is com.isl.simpleapp:id/et_1</msg>
+<status status="PASS" starttime="20231212 11:18:53.179" endtime="20231212 11:18:58.093"/>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${field-angka-1}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20231212 11:18:58.165" level="INFO">Current page contains element 'com.isl.simpleapp:id/et_1'.</msg>
+<msg timestamp="20231212 11:18:58.165" level="INFO">criteria is com.isl.simpleapp:id/et_1</msg>
+<status status="PASS" starttime="20231212 11:18:58.093" endtime="20231212 11:18:58.165"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:53.179" endtime="20231212 11:18:58.165"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:34.423" endtime="20231212 11:18:58.166"/>
+</test>
+<test id="s1-t2" name="Begin Calculation" line="17">
+<kw name="Select Number A" library="keywords-main">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231212 11:19:01.169" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231212 11:18:58.169" endtime="20231212 11:19:01.169"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field-angka-1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:01.277" level="INFO">criteria is com.isl.simpleapp:id/et_1</msg>
+<status status="PASS" starttime="20231212 11:19:01.169" endtime="20231212 11:19:01.277"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${field-angka-1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:01.282" level="INFO">Clicking element 'com.isl.simpleapp:id/et_1'.</msg>
+<msg timestamp="20231212 11:19:01.488" level="INFO">criteria is com.isl.simpleapp:id/et_1</msg>
+<status status="PASS" starttime="20231212 11:19:01.277" endtime="20231212 11:19:01.488"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:58.168" endtime="20231212 11:19:01.488"/>
+</kw>
+<kw name="Input Number A - Example :10" library="keywords-main">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field-angka-1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:02.750" level="INFO">criteria is com.isl.simpleapp:id/et_1</msg>
+<status status="PASS" starttime="20231212 11:19:01.490" endtime="20231212 11:19:02.751"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${field-angka-1}</arg>
+<arg>10</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:02.755" level="INFO">Typing text '10' into text field 'com.isl.simpleapp:id/et_1'</msg>
+<msg timestamp="20231212 11:19:03.638" level="INFO">criteria is com.isl.simpleapp:id/et_1</msg>
+<status status="PASS" starttime="20231212 11:19:02.751" endtime="20231212 11:19:03.638"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:01.489" endtime="20231212 11:19:03.638"/>
+</kw>
+<kw name="Select Formula" library="keywords-main">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${formula-option}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:04.435" level="INFO">criteria is com.isl.simpleapp:id/spinner_1</msg>
+<status status="PASS" starttime="20231212 11:19:03.640" endtime="20231212 11:19:04.435"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${formula-option}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:04.438" level="INFO">Clicking element 'com.isl.simpleapp:id/spinner_1'.</msg>
+<msg timestamp="20231212 11:19:04.578" level="INFO">criteria is com.isl.simpleapp:id/spinner_1</msg>
+<status status="PASS" starttime="20231212 11:19:04.435" endtime="20231212 11:19:04.578"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:03.639" endtime="20231212 11:19:04.578"/>
+</kw>
+<kw name="Select Formula - Multiplication" library="keywords-main">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${formula-times}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:06.636" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="android:id/text1" and @text="*"]</msg>
+<status status="PASS" starttime="20231212 11:19:04.580" endtime="20231212 11:19:06.636"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${formula-times}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:06.641" level="INFO">Clicking element '//android.widget.TextView[@resource-id="android:id/text1" and @text="*"]'.</msg>
+<msg timestamp="20231212 11:19:07.636" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="android:id/text1" and @text="*"]</msg>
+<status status="PASS" starttime="20231212 11:19:06.637" endtime="20231212 11:19:07.636"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:04.580" endtime="20231212 11:19:07.636"/>
+</kw>
+<kw name="Select Number B" library="keywords-main">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field-angka-2}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:07.769" level="INFO">criteria is com.isl.simpleapp:id/et_2</msg>
+<status status="PASS" starttime="20231212 11:19:07.637" endtime="20231212 11:19:07.770"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${field-angka-2}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:07.773" level="INFO">Clicking element 'com.isl.simpleapp:id/et_2'.</msg>
+<msg timestamp="20231212 11:19:07.929" level="INFO">criteria is com.isl.simpleapp:id/et_2</msg>
+<status status="PASS" starttime="20231212 11:19:07.770" endtime="20231212 11:19:07.929"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:07.637" endtime="20231212 11:19:07.929"/>
+</kw>
+<kw name="Input Number B - Example :20" library="keywords-main">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field-angka-2}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:08.766" level="INFO">criteria is com.isl.simpleapp:id/et_2</msg>
+<status status="PASS" starttime="20231212 11:19:07.931" endtime="20231212 11:19:08.766"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${field-angka-2}</arg>
+<arg>20</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:08.771" level="INFO">Typing text '20' into text field 'com.isl.simpleapp:id/et_2'</msg>
+<msg timestamp="20231212 11:19:09.687" level="INFO">criteria is com.isl.simpleapp:id/et_2</msg>
+<status status="PASS" starttime="20231212 11:19:08.766" endtime="20231212 11:19:09.687"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:07.930" endtime="20231212 11:19:09.687"/>
+</kw>
+<kw name="Calculate Result" library="keywords-main">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${button-calculate}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231212 11:19:10.534" level="INFO">criteria is com.isl.simpleapp:id/acb_calculate</msg>
+<status status="PASS" starttime="20231212 11:19:09.689" endtime="20231212 11:19:10.534"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${button-calculate}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231212 11:19:10.538" level="INFO">Clicking element 'com.isl.simpleapp:id/acb_calculate'.</msg>
+<msg timestamp="20231212 11:19:10.733" level="INFO">criteria is com.isl.simpleapp:id/acb_calculate</msg>
+<status status="PASS" starttime="20231212 11:19:10.534" endtime="20231212 11:19:10.733"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:09.688" endtime="20231212 11:19:10.733"/>
+</kw>
+<kw name="Check Result Multiplication" library="keywords-main">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>${field-result}</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20231212 11:19:11.035" level="INFO">Current page contains element 'com.isl.simpleapp:id/tv_result'.</msg>
+<msg timestamp="20231212 11:19:11.035" level="INFO">criteria is com.isl.simpleapp:id/tv_result</msg>
+<status status="PASS" starttime="20231212 11:19:10.734" endtime="20231212 11:19:11.035"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>200</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20231212 11:19:11.579" level="INFO">Current page contains text '200'.</msg>
+<status status="PASS" starttime="20231212 11:19:11.035" endtime="20231212 11:19:11.579"/>
+</kw>
+<status status="PASS" starttime="20231212 11:19:10.734" endtime="20231212 11:19:11.579"/>
+</kw>
+<status status="PASS" starttime="20231212 11:18:58.168" endtime="20231212 11:19:11.580"/>
+</test>
+<status status="PASS" starttime="20231212 11:18:34.017" endtime="20231212 11:19:11.584"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testcase-Mainmultiplication">Testcase-Mainmultiplication</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
